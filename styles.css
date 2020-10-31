@@ -1,12 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  font-family: "Amatic SC", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 35px;
 }
 
 body {
   margin: 0;
   font-family: "Roboto";
-  background-image: url(/assets/bg.jpg);
+  background-image: url(./assets/bg.jpg);
 }
 
 .container {
@@ -48,6 +57,7 @@ body {
 .title {
   color: white;
   text-align: center;
+  font-size: larger;
 }
 
 .row {
