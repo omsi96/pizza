@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  background-image: url(/assets/bg.jpg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.menu-container {
+  /* min-width: 80%; */
+
+  /* background-color: white; */
+  max-width: 750px;
+  border-radius: 12px;
+  margin: 50px;
+  z-index: 0;
+}
+
+.menu-title {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 2-px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border: 0px;
+
+  border-color: rgba(57, 57, 57, 0.886);
+  border-style: solid;
+  border-bottom: 1px;
+
+  padding-bottom: 40px;
+  background: white;
+}
+.dish-details {
+  flex-direction: column;
+}
+
+.price-tag {
+  /* margin-right: auto; */
+  /* justify-self: flex-end; */
+  height: 100%;
+  padding-left: 20px;
+  padding: 7px 13px 7px 13px;
+  margin: 13px;
+  text-align: center;
+  background-color: #ffcc47;
+}
+.item-title {
+  margin-bottom: 10px;
+  z-index: 999;
+}
+.item-description {
+  color: #b3b3b3;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+  }
+
+  .menu-container {
+    /* min-width: 80%; */
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+    top: 0;
+    /* background-color: white; */
+    border-radius: 12px;
+    margin: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+.food-tags-row {
+  display: flex;
+  flex-direction: row;
+  z-index: 0;
+}
+.food-circle-wrapper {
+  filter: drop-shadow(0px 0px 8px rgba(50, 50, 0, 0.1));
+}
+
+.food-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 12px;
+  clip-path: circle(50% at 50% 50%);
+  margin: 12px 4px;
+  height: 60px;
+  width: 60px;
+  z-index: 0;
+}
+
+.food-circle img {
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+}
